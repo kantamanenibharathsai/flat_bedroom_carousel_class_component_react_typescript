@@ -12,7 +12,6 @@ const homeStyles = {
     display: "flex",
     flexDirection: "column",
     gap: "50px",
-    // border: "1px solid black",
     width: { xs: "98%", sm: "95%", md: "90%", lg: "95%", xl: "75%" },
   },
 
@@ -84,12 +83,20 @@ const homeStyles = {
     flexDirection: { xs: "column", lg: "row" },
     gap: { xs: "20px", lg: "0px" },
     justifyContent: "space-between",
-    // border: "1px solid pink",
   },
 
   carouselImage: {
     width: { xs: "100%", sm: "100%", lg: "65%", xl: "70%" },
     height: { xs: "300px", md: "500px", lg: "605px" },
+  },
+
+  smallImgsContainer: {
+    display: "flex",
+    flexDirection: { xs: "row", lg: "column" },
+    gap: { xs: "0px", sm: "25px" },
+    alignItems: "center",
+    position: "relative",
+    justifyContent: { xs: "space-between", sm: "flex-start" },
   },
 
   carouselSmallImg: {
@@ -162,9 +169,8 @@ const homeStyles = {
     width: "100%",
     px: "18px",
     gap: "10px",
-    // border: "2px solid red",
     pb: "40px",
-    pt: "20px"
+    pt: "20px",
   },
 
   copyLinkContainer: {
@@ -174,6 +180,7 @@ const homeStyles = {
     alignItems: "center",
     gap: "10px",
     alignSelf: "flex-end",
+    cursor: "pointer",
   },
 
   copyLinkText: {
@@ -221,6 +228,71 @@ const homeStyles = {
     height: "20px",
     color: "#787885",
     cursor: "pointer",
+  },
+
+  modelBox: {
+    position: { lg: "absolute" },
+    top: { lg: "50%" },
+    left: { lg: "50%" },
+    transform: { lg: "translate(-50%, -50%)" },
+    width: { xs: "100%", lg: "60%", xl: "45%" },
+    backgroundColor: "rgba(0,0,0,0.7)",
+    border: "0px",
+    boxShadow: "none",
+    borderRadius: "8px",
+    pt: "12px",
+    pb: "90px",
+    height: { xs: "100vh", lg: "auto" },
+  },
+
+  closeIconContainer: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    pr: 1.4,
+  },
+
+  closeIconOne: {
+    width: "25px",
+    height: "25px",
+    color: "#fff",
+    cursor: "pointer",
+  },
+
+  modalContentContainerOne: {
+    px: { xs: "10px", sm: "20px", md: "30px" },
+    pt: "15px",
+  },
+
+  modalTitleOne: {
+    fontSize: { xs: "15px", sm: "18px" },
+    fontWeight: "400",
+    fontFamily: "Poppins",
+    color: "#fff",
+    mt: 2,
+  },
+
+  shareBtnContainer: {
+    textTransform: "capitalize",
+    fontSize: "1.5rem",
+    fontWeight: "400",
+    fontFamily: "Poppins",
+    color: "#3F6B94",
+    background: "#fff",
+    borderRadius: "4px",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    height: "44px",
+    px: "10px",
+    cursor: "pointer",
+    width: "95px",
+    marginTop: "1.6%",
+  },
+
+  swiperImg: {
+    height: "45vh",
+    width: "100%",
   },
 };
 
